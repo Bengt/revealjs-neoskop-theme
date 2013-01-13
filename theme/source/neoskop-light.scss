@@ -1,0 +1,48 @@
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Duru+Sans);
+
+$backgroundColor: #fff;
+$mainFont: 'Duru Sans', sans-serif;
+$mainFontSize: 25px;
+$mainColor: #333;
+
+$headingFont: $mainFont;
+$headingColor: $mainColor;
+$headingLetterSpacing: 0;
+$headingTextTransform: normal;
+
+$linkColor: #643B78;
+$linkColorHover: $linkColor;
+
+.reveal {
+  .progress {
+    height: 20px;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
+
+    span {
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  section img {
+    border: 8px solid $backgroundColor!important;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5)!important;
+  }
+
+  pre {
+    font-size: 0.8em!important;
+  }
+
+  blockquote {
+    background: url(img/quotemark.png) 0 0 no-repeat;
+    padding: 18px 0px 105px 30px!important;
+    box-shadow: none;
+  }
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
